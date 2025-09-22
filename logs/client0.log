@@ -1,0 +1,127 @@
+2025-09-22 17:30:35.296166: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-09-22 17:30:37.040169: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Found 800 files belonging to 4 classes.
+2025-09-22 17:30:42.726040: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-22 17:30:43.707237: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+Starting client 0...
+C:\Projects\fl-medical-imaging\venv\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:113: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+WARNING :   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+INFO :
+INFO :      Received: train message 87c1e1f0-a515-4678-9879-5cf6614bc58a
+2025-09-22 17:30:58.176799: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 825ef70e-2886-45d8-a68c-d17d5a053a10
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 60d11cc3-7a1d-4ce7-b627-d2cecaabad74
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message f0cba159-5efa-4cea-a9c4-641929c35621
+2025-09-22 17:33:27.201681: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message de9422c9-4a27-453b-a523-3f55d45ff0be
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 912e2b51-72d6-49fc-9aa1-8bbfe53dfe9e
+2025-09-22 17:35:08.253280: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message d3b09963-ea23-4fc8-a5ca-9974c17a8e27
+2025-09-22 17:35:59.550228: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 356bab77-5acd-4d5a-8a8f-5ca0beb542a1
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 3d9fe9d7-793d-4cc4-a964-3bbea025cc3b
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 58c849bb-994f-4991-b13a-1f01ab66827b
+2025-09-22 17:39:18.062980: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message dbddfc51-eea0-4951-a555-2dbac836be82
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 9e5edb06-5ebf-4791-934b-378b841df628
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 11f9ae6b-afa9-4eed-a764-91ea868f87bc
+2025-09-22 17:42:01.827093: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message ae0f86e5-3d46-4961-8972-d82996a511b9
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 9b4dc60e-31f6-4b44-bf9f-ef225ebc7ade
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 4b3c81e7-4fed-4e2e-a52c-f12db2494e02
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 0c93ad5c-31fb-4580-b287-3e03f66fd7a8
+2025-09-22 17:45:42.453418: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 4d0e9aa8-5fb7-40bf-9020-c73330f60770
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message fd9e593d-8162-4114-9851-371f9acdd5a6
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message e939b937-e0f2-4ef1-8b8b-98d482733356
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 47525fb7-b88f-4c3e-97fd-e77538e4197b
+2025-09-22 17:49:03.656621: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message f9150b10-1660-471d-a549-03e8377074d0
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message a0dfa6b7-1098-483d-a824-a2a4eaa208ea
+2025-09-22 17:50:58.568680: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message a397fe95-e58e-45de-9ec7-e29218e7ca19
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 920b0dc6-523d-47e0-bc2f-ee6bbc3f2c1e
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message ef5046f5-2785-4e6c-8379-51cb72164a2e
+2025-09-22 17:53:33.171713: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message f9620f5e-ef3c-4e07-a831-63a178411039
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message d1375113-e63a-4556-b7f1-9a897489ce40
+2025-09-22 17:55:28.129612: W tensorflow/core/kernels/data/prefetch_autotuner.cc:52] Prefetch autotuner tried to allocate 25165952 bytes after encountering the first element of size 25165952 bytes.This already causes the autotune ram budget to be exceeded. To stay within the ram budget, either increase the ram budget or reduce element size
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 86c06dbb-70f4-4864-b67a-895b45a268aa
+INFO :      Sent reply
+INFO :
+INFO :      Received: train message 60d76c55-ff4b-41f3-982f-2d29d939da79
+INFO :      Sent reply
+INFO :
+INFO :      Received: reconnect message 7b1615a1-1426-4398-bcb8-5345b665472e
+INFO :      Disconnect and shut down

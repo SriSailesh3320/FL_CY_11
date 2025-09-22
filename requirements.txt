@@ -1,0 +1,9 @@
+flwr
+tensorflow
+scikit-learn
+pandas
+numpy
+Pillow
+opencv-python 
+imutils
+tqdm

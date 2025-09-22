@@ -1,0 +1,495 @@
+2025-09-22 17:30:33.712424: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-09-22 17:30:35.983336: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Loading centralized test set for the server...
+Found 800 files belonging to 4 classes.
+2025-09-22 17:30:42.735348: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-22 17:30:43.710131: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+Test set loaded.
+C:\Projects\fl-medical-imaging\venv\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:113: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+Starting Flower server...
+WARNING :   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+        Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+                $ flower-superlink --insecure
+
+        To view usage and all available options, run:
+
+                $ flower-superlink --help
+
+        Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+INFO :      Starting Flower server, config: num_rounds=30, no round_timeout
+INFO :      Flower ECE: gRPC server running (30 rounds), SSL is disabled
+INFO :      [INIT]
+INFO :      Requesting initial parameters from one random client
+INFO :      Received initial parameters from one random client
+INFO :      Starting evaluation of initial global parameters
+--- Server-side evaluation round 0 ---
+Loss: 1.4012, Accuracy: 0.2188
+-------------------------------------------------
+INFO :      initial parameters (loss, other metrics): 1.4011868238449097, {'accuracy': 0.21875}
+INFO :
+INFO :      [ROUND 1]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 1: Aggregation ---
+Weights before aggregation (summaries): ['3.0603', '3.0830', '3.0805', '3.0776', '3.0811']
+WARNING :   No fit_metrics_aggregation_fn provided
+Weight after aggregation (summary): 3.0765
+--- Server-side evaluation round 1 ---
+Loss: 1.4094, Accuracy: 0.2562
+-------------------------------------------------
+INFO :      fit progress: (1, 1.4093793630599976, {'accuracy': 0.2562499940395355}, 42.35688649999793)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 2]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 2: Aggregation ---
+Weights before aggregation (summaries): ['3.0338', '3.0313', '3.0294', '3.0335', '3.0287']
+Weight after aggregation (summary): 3.0313
+--- Server-side evaluation round 2 ---
+Loss: 1.3328, Accuracy: 0.2812
+-------------------------------------------------
+INFO :      fit progress: (2, 1.332826018333435, {'accuracy': 0.28125}, 91.07463429999189)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 3]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 3: Aggregation ---
+Weights before aggregation (summaries): ['3.0150', '3.0188', '3.0041', '3.0097', '3.0130']
+Weight after aggregation (summary): 3.0121
+--- Server-side evaluation round 3 ---
+Loss: 1.2816, Accuracy: 0.4062
+-------------------------------------------------
+INFO :      fit progress: (3, 1.2815829515457153, {'accuracy': 0.40625}, 142.2730802000151)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 4]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 4: Aggregation ---
+Weights before aggregation (summaries): ['3.0059', '3.0153', '3.0344', '3.0227', '3.0121']
+Weight after aggregation (summary): 3.0181
+--- Server-side evaluation round 4 ---
+Loss: 1.2440, Accuracy: 0.5312
+-------------------------------------------------
+INFO :      fit progress: (4, 1.244035005569458, {'accuracy': 0.53125}, 194.52108909998788)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 5]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 5: Aggregation ---
+Weights before aggregation (summaries): ['3.0364', '3.0600', '3.0425', '3.0705', '3.0360']
+Weight after aggregation (summary): 3.0491
+--- Server-side evaluation round 5 ---
+Loss: 1.2042, Accuracy: 0.6313
+-------------------------------------------------
+INFO :      fit progress: (5, 1.204196572303772, {'accuracy': 0.6312500238418579}, 244.96562880001147)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 6]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 6: Aggregation ---
+Weights before aggregation (summaries): ['3.0957', '3.0978', '3.0990', '3.1261', '3.1255']
+Weight after aggregation (summary): 3.1088
+--- Server-side evaluation round 6 ---
+Loss: 1.1531, Accuracy: 0.6438
+-------------------------------------------------
+INFO :      fit progress: (6, 1.1530654430389404, {'accuracy': 0.643750011920929}, 298.26055619999534)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 7]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 7: Aggregation ---
+Weights before aggregation (summaries): ['3.2157', '3.2246', '3.1821', '3.1895', '3.1799']
+Weight after aggregation (summary): 3.1984
+--- Server-side evaluation round 7 ---
+Loss: 1.0991, Accuracy: 0.6250
+-------------------------------------------------
+INFO :      fit progress: (7, 1.099121332168579, {'accuracy': 0.625}, 351.77177530000336)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 8]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 8: Aggregation ---
+Weights before aggregation (summaries): ['3.2991', '3.2908', '3.3255', '3.2965', '3.3397']
+Weight after aggregation (summary): 3.3103
+--- Server-side evaluation round 8 ---
+Loss: 1.0646, Accuracy: 0.6500
+-------------------------------------------------
+INFO :      fit progress: (8, 1.0646002292633057, {'accuracy': 0.6499999761581421}, 444.34525069998926)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 9]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 9: Aggregation ---
+Weights before aggregation (summaries): ['3.4075', '3.4223', '3.4118', '3.4387', '3.4384']
+Weight after aggregation (summary): 3.4237
+--- Server-side evaluation round 9 ---
+Loss: 1.0367, Accuracy: 0.6125
+-------------------------------------------------
+INFO :      fit progress: (9, 1.0367006063461304, {'accuracy': 0.612500011920929}, 496.4890834999969)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 10]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 10: Aggregation ---
+Weights before aggregation (summaries): ['3.5727', '3.5425', '3.5586', '3.5697', '3.5343']
+Weight after aggregation (summary): 3.5555
+--- Server-side evaluation round 10 ---
+Loss: 0.9945, Accuracy: 0.6625
+-------------------------------------------------
+INFO :      fit progress: (10, 0.9945316314697266, {'accuracy': 0.6625000238418579}, 550.9932520000148)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 11]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 11: Aggregation ---
+Weights before aggregation (summaries): ['3.6927', '3.6409', '3.6967', '3.6946', '3.6682']
+Weight after aggregation (summary): 3.6786
+--- Server-side evaluation round 11 ---
+Loss: 0.9647, Accuracy: 0.7000
+-------------------------------------------------
+INFO :      fit progress: (11, 0.964733898639679, {'accuracy': 0.699999988079071}, 601.1799662999983)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 12]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 12: Aggregation ---
+Weights before aggregation (summaries): ['3.8164', '3.7946', '3.7562', '3.8185', '3.7986']
+Weight after aggregation (summary): 3.7969
+--- Server-side evaluation round 12 ---
+Loss: 0.9409, Accuracy: 0.7000
+-------------------------------------------------
+INFO :      fit progress: (12, 0.9409452676773071, {'accuracy': 0.699999988079071}, 657.1933869000059)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 13]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 13: Aggregation ---
+Weights before aggregation (summaries): ['3.8747', '3.8925', '3.9330', '3.9373', '3.9203']
+Weight after aggregation (summary): 3.9116
+--- Server-side evaluation round 13 ---
+Loss: 0.9098, Accuracy: 0.6812
+-------------------------------------------------
+INFO :      fit progress: (13, 0.9097938537597656, {'accuracy': 0.6812499761581421}, 709.8902172000089)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 14]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 14: Aggregation ---
+Weights before aggregation (summaries): ['4.0116', '3.9869', '4.0451', '4.0514', '4.0456']
+Weight after aggregation (summary): 4.0281
+--- Server-side evaluation round 14 ---
+Loss: 0.9076, Accuracy: 0.7437
+-------------------------------------------------
+INFO :      fit progress: (14, 0.9075878858566284, {'accuracy': 0.7437499761581421}, 765.1083905000123)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 15]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 15: Aggregation ---
+Weights before aggregation (summaries): ['4.1233', '4.1546', '4.1284', '4.0931', '4.1097']
+Weight after aggregation (summary): 4.1218
+--- Server-side evaluation round 15 ---
+Loss: 0.8683, Accuracy: 0.6750
+-------------------------------------------------
+INFO :      fit progress: (15, 0.8682573437690735, {'accuracy': 0.675000011920929}, 821.7611064999946)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 16]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 16: Aggregation ---
+Weights before aggregation (summaries): ['4.2158', '4.2962', '4.1869', '4.2444', '4.2300']
+Weight after aggregation (summary): 4.2347
+--- Server-side evaluation round 16 ---
+Loss: 0.8780, Accuracy: 0.7500
+-------------------------------------------------
+INFO :      fit progress: (16, 0.878020167350769, {'accuracy': 0.75}, 875.0607286000159)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 17]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 17: Aggregation ---
+Weights before aggregation (summaries): ['4.3357', '4.4000', '4.2939', '4.3192', '4.3509']
+Weight after aggregation (summary): 4.3399
+--- Server-side evaluation round 17 ---
+Loss: 0.8347, Accuracy: 0.7063
+-------------------------------------------------
+INFO :      fit progress: (17, 0.834731936454773, {'accuracy': 0.706250011920929}, 929.5061728000001)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 18]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 18: Aggregation ---
+Weights before aggregation (summaries): ['4.4438', '4.4583', '4.5122', '4.4007', '4.4720']
+Weight after aggregation (summary): 4.4574
+--- Server-side evaluation round 18 ---
+Loss: 0.8316, Accuracy: 0.7312
+-------------------------------------------------
+INFO :      fit progress: (18, 0.8316181302070618, {'accuracy': 0.731249988079071}, 979.0024289000139)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 19]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 19: Aggregation ---
+Weights before aggregation (summaries): ['4.5810', '4.5534', '4.6012', '4.5153', '4.5585']
+Weight after aggregation (summary): 4.5619
+--- Server-side evaluation round 19 ---
+Loss: 0.8112, Accuracy: 0.7437
+-------------------------------------------------
+INFO :      fit progress: (19, 0.8111759424209595, {'accuracy': 0.7437499761581421}, 1031.0061046000046)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 20]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 20: Aggregation ---
+Weights before aggregation (summaries): ['4.6996', '4.6472', '4.6941', '4.5912', '4.6640']
+Weight after aggregation (summary): 4.6592
+--- Server-side evaluation round 20 ---
+Loss: 0.7978, Accuracy: 0.7250
+-------------------------------------------------
+INFO :      fit progress: (20, 0.7978348135948181, {'accuracy': 0.7250000238418579}, 1081.8044896000065)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 21]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 21: Aggregation ---
+Weights before aggregation (summaries): ['4.7783', '4.8015', '4.7046', '4.8124', '4.7756']
+Weight after aggregation (summary): 4.7745
+--- Server-side evaluation round 21 ---
+Loss: 0.7914, Accuracy: 0.7375
+-------------------------------------------------
+INFO :      fit progress: (21, 0.7913755178451538, {'accuracy': 0.737500011920929}, 1137.8719065999903)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 22]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 22: Aggregation ---
+Weights before aggregation (summaries): ['4.8942', '4.8932', '4.8124', '4.9314', '4.9030']
+Weight after aggregation (summary): 4.8868
+--- Server-side evaluation round 22 ---
+Loss: 0.7729, Accuracy: 0.7250
+-------------------------------------------------
+INFO :      fit progress: (22, 0.7728675603866577, {'accuracy': 0.7250000238418579}, 1189.7956642000063)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 23]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 23: Aggregation ---
+Weights before aggregation (summaries): ['4.9321', '5.0267', '5.0137', '5.0269', '5.0217']
+Weight after aggregation (summary): 5.0042
+--- Server-side evaluation round 23 ---
+Loss: 0.7702, Accuracy: 0.7437
+-------------------------------------------------
+INFO :      fit progress: (23, 0.7702113389968872, {'accuracy': 0.7437499761581421}, 1242.7953158000018)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 24]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 24: Aggregation ---
+Weights before aggregation (summaries): ['5.1181', '5.0555', '5.1348', '5.1073', '5.1438']
+Weight after aggregation (summary): 5.1119
+--- Server-side evaluation round 24 ---
+Loss: 0.7504, Accuracy: 0.7188
+-------------------------------------------------
+INFO :      fit progress: (24, 0.7503941059112549, {'accuracy': 0.71875}, 1297.3332859000075)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 25]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 25: Aggregation ---
+Weights before aggregation (summaries): ['5.2388', '5.2303', '5.1733', '5.2248', '5.2688']
+Weight after aggregation (summary): 5.2272
+--- Server-side evaluation round 25 ---
+Loss: 0.7585, Accuracy: 0.7500
+-------------------------------------------------
+INFO :      fit progress: (25, 0.758472740650177, {'accuracy': 0.75}, 1352.4642336000106)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 26]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 26: Aggregation ---
+Weights before aggregation (summaries): ['5.3620', '5.3401', '5.2791', '5.3188', '5.3639']
+Weight after aggregation (summary): 5.3328
+--- Server-side evaluation round 26 ---
+Loss: 0.7293, Accuracy: 0.7312
+-------------------------------------------------
+INFO :      fit progress: (26, 0.7293241620063782, {'accuracy': 0.731249988079071}, 1405.230128700001)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 27]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 27: Aggregation ---
+Weights before aggregation (summaries): ['5.3819', '5.4518', '5.4380', '5.4684', '5.4367']
+Weight after aggregation (summary): 5.4353
+--- Server-side evaluation round 27 ---
+Loss: 0.7397, Accuracy: 0.7500
+-------------------------------------------------
+INFO :      fit progress: (27, 0.7396829724311829, {'accuracy': 0.75}, 1461.2085362999933)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 28]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 28: Aggregation ---
+Weights before aggregation (summaries): ['5.5252', '5.5210', '5.4798', '5.5513', '5.5340']
+Weight after aggregation (summary): 5.5222
+--- Server-side evaluation round 28 ---
+Loss: 0.7292, Accuracy: 0.7375
+-------------------------------------------------
+INFO :      fit progress: (28, 0.729249119758606, {'accuracy': 0.737500011920929}, 1515.7558530000097)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 29]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 29: Aggregation ---
+Weights before aggregation (summaries): ['5.6195', '5.6648', '5.5700', '5.6230', '5.6293']
+Weight after aggregation (summary): 5.6213
+--- Server-side evaluation round 29 ---
+Loss: 0.7198, Accuracy: 0.7500
+-------------------------------------------------
+INFO :      fit progress: (29, 0.7198454737663269, {'accuracy': 0.75}, 1568.4684028000047)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [ROUND 30]
+INFO :      configure_fit: strategy sampled 5 clients (out of 5)
+INFO :      aggregate_fit: received 5 results and 0 failures
+
+--- Round 30: Aggregation ---
+Weights before aggregation (summaries): ['5.7144', '5.7021', '5.6565', '5.7098', '5.7168']
+Weight after aggregation (summary): 5.6999
+--- Server-side evaluation round 30 ---
+Loss: 0.7314, Accuracy: 0.7188
+-------------------------------------------------
+INFO :      fit progress: (30, 0.7313629388809204, {'accuracy': 0.71875}, 1628.0599247000064)
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 30 round(s) in 1628.08s
+INFO :          History (loss, centralized):
+INFO :                  round 0: 1.4011868238449097
+INFO :                  round 1: 1.4093793630599976
+INFO :                  round 2: 1.332826018333435
+INFO :                  round 3: 1.2815829515457153
+INFO :                  round 4: 1.244035005569458
+INFO :                  round 5: 1.204196572303772
+INFO :                  round 6: 1.1530654430389404
+INFO :                  round 7: 1.099121332168579
+INFO :                  round 8: 1.0646002292633057
+INFO :                  round 9: 1.0367006063461304
+INFO :                  round 10: 0.9945316314697266
+INFO :                  round 11: 0.964733898639679
+INFO :                  round 12: 0.9409452676773071
+INFO :                  round 13: 0.9097938537597656
+INFO :                  round 14: 0.9075878858566284
+INFO :                  round 15: 0.8682573437690735
+INFO :                  round 16: 0.878020167350769
+INFO :                  round 17: 0.834731936454773
+INFO :                  round 18: 0.8316181302070618
+INFO :                  round 19: 0.8111759424209595
+INFO :                  round 20: 0.7978348135948181
+INFO :                  round 21: 0.7913755178451538
+INFO :                  round 22: 0.7728675603866577
+INFO :                  round 23: 0.7702113389968872
+INFO :                  round 24: 0.7503941059112549
+INFO :                  round 25: 0.758472740650177
+INFO :                  round 26: 0.7293241620063782
+INFO :                  round 27: 0.7396829724311829
+INFO :                  round 28: 0.729249119758606
+INFO :                  round 29: 0.7198454737663269
+INFO :                  round 30: 0.7313629388809204
+INFO :          History (metrics, centralized):
+INFO :          {'accuracy': [(0, 0.21875),
+INFO :                        (1, 0.2562499940395355),
+INFO :                        (2, 0.28125),
+INFO :                        (3, 0.40625),
+INFO :                        (4, 0.53125),
+INFO :                        (5, 0.6312500238418579),
+INFO :                        (6, 0.643750011920929),
+INFO :                        (7, 0.625),
+INFO :                        (8, 0.6499999761581421),
+INFO :                        (9, 0.612500011920929),
+INFO :                        (10, 0.6625000238418579),
+INFO :                        (11, 0.699999988079071),
+INFO :                        (12, 0.699999988079071),
+INFO :                        (13, 0.6812499761581421),
+INFO :                        (14, 0.7437499761581421),
+INFO :                        (15, 0.675000011920929),
+INFO :                        (16, 0.75),
+INFO :                        (17, 0.706250011920929),
+INFO :                        (18, 0.731249988079071),
+INFO :                        (19, 0.7437499761581421),
+INFO :                        (20, 0.7250000238418579),
+INFO :                        (21, 0.737500011920929),
+INFO :                        (22, 0.7250000238418579),
+INFO :                        (23, 0.7437499761581421),
+INFO :                        (24, 0.71875),
+INFO :                        (25, 0.75),
+INFO :                        (26, 0.731249988079071),
+INFO :                        (27, 0.75),
+INFO :                        (28, 0.737500011920929),
+INFO :                        (29, 0.75),
+INFO :                        (30, 0.71875)]}
+INFO :
+Flower server stopped.
